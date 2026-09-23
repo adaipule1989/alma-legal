@@ -1,30 +1,34 @@
 const translations = {
   en: {
-    metaTitle: "Alma Legal | Attorney, Public Notary & Civil Weddings in Costa Rica",
-    metaDescription: "Private legal and notarial services in Costa Rica, including bespoke bilingual civil wedding ceremonies by Adriana Mayorga.",
+    metaTitle: "Alma Legal | Real Estate & Business Attorney in Costa Rica",
+    metaDescription: "Real estate, business, and notarial services in Costa Rica, including bespoke bilingual civil wedding ceremonies by Adriana Mayorga.",
     skipLink: "Skip to content", brandTagline: "Legal Services", menuOpen: "Open menu", menuClose: "Close menu",
     navServices: "Services", navWeddings: "Weddings", navAbout: "About", navContact: "Contact",
     consultation: "Book a consultation", heroEyebrow: "Legal, notarial & civil wedding services · Costa Rica",
     heroTitle: "Legal guidance.<br><em>Civil weddings.</em>",
-    heroIntro: "Adriana Mayorga is a Costa Rican attorney and public notary offering legal, notarial, and bilingual civil wedding services throughout Costa Rica.",
-    exploreServices: "View all services", planningWedding: "Explore civil weddings <span>↗</span>",
+    heroIntro: "Adriana Mayorga is a Costa Rican attorney and public notary offering real estate, business, notarial, and bilingual civil wedding services throughout Costa Rica.",
+    exploreServices: "Book a consultation", planningWedding: "Plan your ceremony <span>↗</span>",
+    trustLabel: "Professional credentials", trustAttorney: "Costa Rican Attorney", trustNotary: "Public Notary",
+    trustLanguages: "English & Spanish", trustCostaRica: "Serving clients throughout Costa Rica",
     servicesEyebrow: "How I can help",
     servicesTitle: "Legal and notarial support,<br>plus civil weddings.",
-    servicesIntro: "From legal documents and notarial work to personalized wedding ceremonies, Alma Legal guides you through every step in English or Spanish.",
+    servicesIntro: "From real estate and business matters to notarial work and personalized wedding ceremonies, Alma Legal guides you through every step in English or Spanish.",
     storyCaptionOne: "Clear advice. Complete discretion.", storyCaptionTwo: "Every detail, carefully considered.",
     storyCaptionThree: "Your story, beautifully honored.", storyEyebrowOne: "Private counsel",
     storyEyebrowTwo: "Precision in every detail", storyEyebrowThree: "Made for your story",
-    legalTitle: "Legal guidance", legalText: "Attentive counsel for personal matters and important decisions in Costa Rica.",
-    notaryTitle: "Notarial services", notaryText: "Professional preparation, review, and formalization of legal documents.",
+    legalTitle: "Real estate & business law", legalText: "Clear legal guidance for individuals, property owners, restaurants, and retail businesses navigating matters in Costa Rica.",
+    legalPointOne: "Real estate matters", legalPointTwo: "Restaurants & hospitality businesses", legalPointThree: "Stores & retail businesses",
+    notaryTitle: "Notarial services", notaryText: "Careful preparation, review, certification, and formalization of documents for personal, property, and business matters.",
+    notaryPointOne: "Document preparation & review", notaryPointTwo: "Certifications & notarizations", notaryPointThree: "Property & business documents",
     weddingTitle: "Civil weddings", weddingText: "Legal, heartfelt ceremonies created for your story, anywhere in Costa Rica.",
-    discoverWeddings: "Discover wedding services <span>→</span>", fromHeart: "Civil ceremonies · Costa Rica",
+    discoverWeddings: "Plan your ceremony <span>→</span>", fromHeart: "Civil ceremonies · Costa Rica",
     weddingEyebrow: "Your wedding, your way", weddingHeading: "Your vows deserve<br><em>an extraordinary setting.</em>",
     weddingIntro: "A private civil ceremony service shaped around your vision—from impeccable legal preparation to words that feel unmistakably yours.",
     weddingOne: "Pre-wedding consultation", weddingTwo: "Tailored ceremony & speech", weddingThree: "Planner coordination",
-    weddingFour: "English or Spanish officiation", planCeremony: "Let’s plan your ceremony",
+    weddingFour: "English or Spanish officiation", planCeremony: "Plan your ceremony",
     galleryEyebrow: "Civil weddings across Costa Rica", galleryScript: "Your ceremony, wherever you choose.",
     aboutEyebrow: "Meet your attorney", aboutRole: "Costa Rican Attorney & Public Notary",
-    aboutText: "I’m Adriana Mayorga, a Costa Rican attorney and public notary. Through Alma Legal, I offer thoughtful legal and notarial support with a clear, personal approach.",
+    aboutText: "I’m Adriana Mayorga, a Costa Rican attorney and public notary. Through Alma Legal, I advise individuals and businesses on real estate, restaurant, retail, and notarial matters with a clear, personal approach.",
     aboutTextTwo: "For couples marrying in Costa Rica, I bring the same precision to every ceremony—guiding the legal process, coordinating with planners, and creating meaningful words that feel entirely their own.",
     credentialOne: "Costa Rican attorney", credentialTwo: "Public notary", credentialThree: "English & Spanish",
     linkedinLabel: "View LinkedIn profile",
@@ -32,34 +36,38 @@ const translations = {
     contactIntro: "Share a little about what you need, and I’ll be in touch to discuss the next step.",
     formName: "Your name", formEmail: "Email address", formService: "How can I help?", formChoose: "Choose a service",
     formOther: "Other", formMessage: "Your message", formSend: "Send inquiry",
-    formNote: "Submitting opens your email app with your message ready to send.", footerText: "Costa Rica"
+    formNote: "Your inquiry will be sent securely and directly to Adriana.", formSuccess: "Thank you. Your inquiry has been sent.", footerText: "Costa Rica"
   },
   es: {
-    metaTitle: "Alma Legal | Abogada, Notaria y Matrimonios Civiles en Costa Rica",
-    metaDescription: "Servicios legales y notariales privados en Costa Rica, incluidas ceremonias civiles bilingües y personalizadas por Adriana Mayorga.",
+    metaTitle: "Alma Legal | Derecho Inmobiliario y Comercial en Costa Rica",
+    metaDescription: "Servicios inmobiliarios, comerciales y notariales en Costa Rica, incluidas ceremonias civiles bilingües y personalizadas por Adriana Mayorga.",
     skipLink: "Ir al contenido", brandTagline: "Servicios Legales", menuOpen: "Abrir menú", menuClose: "Cerrar menú",
     navServices: "Servicios", navWeddings: "Matrimonios", navAbout: "Acerca de mí", navContact: "Contacto",
     consultation: "Agendar una consulta", heroEyebrow: "Servicios legales, notariales y matrimonios civiles · Costa Rica",
     heroTitle: "Asesoría legal.<br><em>Matrimonios civiles.</em>",
-    heroIntro: "Adriana Mayorga es abogada y notaria pública costarricense. Ofrece servicios legales, notariales y matrimonios civiles bilingües en toda Costa Rica.",
-    exploreServices: "Ver todos los servicios", planningWedding: "Ver matrimonios civiles <span>↗</span>",
+    heroIntro: "Adriana Mayorga es abogada y notaria pública costarricense. Ofrece servicios inmobiliarios, comerciales, notariales y matrimonios civiles bilingües en toda Costa Rica.",
+    exploreServices: "Agendar una consulta", planningWedding: "Planear su ceremonia <span>↗</span>",
+    trustLabel: "Credenciales profesionales", trustAttorney: "Abogada costarricense", trustNotary: "Notaria pública",
+    trustLanguages: "Español e inglés", trustCostaRica: "Atención en toda Costa Rica",
     servicesEyebrow: "Cómo puedo ayudarle",
     servicesTitle: "Servicios legales y notariales,<br>además de matrimonios civiles.",
-    servicesIntro: "Desde documentos legales y trámites notariales hasta ceremonias personalizadas, Alma Legal le acompaña en cada paso en español o inglés.",
+    servicesIntro: "Desde asuntos inmobiliarios y comerciales hasta trámites notariales y ceremonias personalizadas, Alma Legal le acompaña en cada paso en español o inglés.",
     storyCaptionOne: "Asesoría clara. Absoluta discreción.", storyCaptionTwo: "Cada detalle, cuidadosamente previsto.",
     storyCaptionThree: "Su historia, celebrada con belleza.", storyEyebrowOne: "Asesoría privada",
     storyEyebrowTwo: "Precisión en cada detalle", storyEyebrowThree: "Creado para su historia",
-    legalTitle: "Asesoría legal", legalText: "Atención cercana para asuntos personales y decisiones importantes en Costa Rica.",
-    notaryTitle: "Servicios notariales", notaryText: "Preparación, revisión y formalización profesional de documentos legales.",
+    legalTitle: "Derecho inmobiliario y comercial", legalText: "Asesoría jurídica clara para personas, propietarios, restaurantes y comercios que gestionan asuntos en Costa Rica.",
+    legalPointOne: "Asuntos inmobiliarios", legalPointTwo: "Restaurantes y negocios gastronómicos", legalPointThree: "Tiendas y comercios",
+    notaryTitle: "Servicios notariales", notaryText: "Preparación, revisión, certificación y formalización cuidadosa de documentos personales, inmobiliarios y comerciales.",
+    notaryPointOne: "Preparación y revisión de documentos", notaryPointTwo: "Certificaciones y autenticaciones", notaryPointThree: "Documentos inmobiliarios y comerciales",
     weddingTitle: "Matrimonios civiles", weddingText: "Ceremonias legales y emotivas creadas para su historia, en cualquier lugar de Costa Rica.",
-    discoverWeddings: "Conocer el servicio de bodas <span>→</span>", fromHeart: "Ceremonias civiles · Costa Rica",
+    discoverWeddings: "Planear su ceremonia <span>→</span>", fromHeart: "Ceremonias civiles · Costa Rica",
     weddingEyebrow: "Su boda, a su manera", weddingHeading: "Sus votos merecen<br><em>un escenario extraordinario.</em>",
     weddingIntro: "Un servicio privado de ceremonia civil creado alrededor de su visión: desde una preparación legal impecable hasta palabras inconfundiblemente suyas.",
     weddingOne: "Consulta previa al matrimonio", weddingTwo: "Ceremonia y discurso personalizados", weddingThree: "Coordinación con wedding planner",
-    weddingFour: "Ceremonia en español o inglés", planCeremony: "Planeemos su ceremonia",
+    weddingFour: "Ceremonia en español o inglés", planCeremony: "Planear su ceremonia",
     galleryEyebrow: "Matrimonios civiles en toda Costa Rica", galleryScript: "Su ceremonia, donde usted elija.",
     aboutEyebrow: "Conozca a su abogada", aboutRole: "Abogada y Notaria Pública de Costa Rica",
-    aboutText: "Soy Adriana Mayorga, abogada y notaria pública costarricense. A través de Alma Legal, ofrezco servicios legales y notariales con un enfoque claro, cercano y profundamente personal.",
+    aboutText: "Soy Adriana Mayorga, abogada y notaria pública costarricense. A través de Alma Legal, asesoro a personas y negocios en asuntos inmobiliarios, de restaurantes, comercios y servicios notariales con un enfoque claro y cercano.",
     aboutTextTwo: "Para las parejas que se casan en Costa Rica, aporto esa misma precisión a cada ceremonia: guío el proceso legal, coordino con wedding planners y creo palabras significativas que reflejan auténticamente su historia.",
     credentialOne: "Abogada costarricense", credentialTwo: "Notaria pública", credentialThree: "Español e inglés",
     linkedinLabel: "Ver perfil de LinkedIn",
@@ -67,7 +75,7 @@ const translations = {
     contactIntro: "Comparta un poco sobre lo que necesita y me pondré en contacto para conversar sobre el siguiente paso.",
     formName: "Su nombre", formEmail: "Correo electrónico", formService: "¿Cómo puedo ayudarle?", formChoose: "Elija un servicio",
     formOther: "Otro", formMessage: "Su mensaje", formSend: "Enviar consulta",
-    formNote: "Al enviar, se abrirá su correo electrónico con el mensaje listo.", footerText: "Costa Rica"
+    formNote: "Su consulta se enviará de forma segura y directa a Adriana.", formSuccess: "Gracias. Su consulta ha sido enviada.", footerText: "Costa Rica"
   }
 };
 
@@ -103,6 +111,9 @@ function setLanguage(language) {
     const value = translations[language][element.dataset.i18n];
     if (value) element.innerHTML = value;
   });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+    element.setAttribute("aria-label", translations[language][element.dataset.i18nAriaLabel]);
+  });
   languageToggle.innerHTML = language === "en"
     ? '<span class="active">EN</span><span aria-hidden="true">/</span><span>ES</span>'
     : '<span>EN</span><span aria-hidden="true">/</span><span class="active">ES</span>';
@@ -114,17 +125,14 @@ function setLanguage(language) {
 languageToggle.addEventListener("click", () => setLanguage(currentLanguage === "en" ? "es" : "en"));
 setLanguage(currentLanguage);
 
-document.getElementById("contact-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = encodeURIComponent(`Alma Legal inquiry — ${data.get("service")}`);
-  const body = encodeURIComponent(
-    `${currentLanguage === "es" ? "Nombre" : "Name"}: ${data.get("name")}\n` +
-    `${currentLanguage === "es" ? "Correo" : "Email"}: ${data.get("email")}\n` +
-    `${currentLanguage === "es" ? "Servicio" : "Service"}: ${data.get("service")}\n\n${data.get("message")}`
-  );
-  window.location.href = `mailto:almalegalcr@gmail.com?subject=${subject}&body=${body}`;
-});
+const nextUrl = new URL(window.location.href);
+nextUrl.searchParams.set("sent", "1");
+nextUrl.hash = "contact";
+document.getElementById("form-next").value = nextUrl.href;
+
+if (new URLSearchParams(window.location.search).get("sent") === "1") {
+  document.getElementById("form-success").hidden = false;
+}
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
