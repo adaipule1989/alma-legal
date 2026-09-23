@@ -109,7 +109,7 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .story-frame img { height: 100%; object-fit: cover; }
 .story-frame[data-frame="0"] img { object-position: 50% 28%; }
 .story-frame[data-frame="1"] img { object-position: 50% 38%; }
-.story-frame[data-frame="2"] img { object-position: 50% 32%; }
+.story-frame[data-frame="2"] img { object-position: 50% 50%; }
 .story-frame figcaption { position: absolute; z-index: 2; right: 42px; bottom: 38px; left: 42px; display: flex; align-items: center; justify-content: space-between; gap: 25px; color: var(--white); font-family: var(--serif); font-size: clamp(22px, 2.3vw, 34px); }
 .story-frame figcaption span:first-child { color: var(--lavender); font-family: var(--sans); font-size: 9px; letter-spacing: .2em; }
 .story-progress { position: absolute; z-index: 3; top: 50%; right: 18px; display: flex; flex-direction: column; gap: 9px; transform: translateY(-50%); }
@@ -240,7 +240,7 @@ footer p { color: #74736b; font-size: 11px; }
   .story-step-image { width: 100%; height: 470px; margin-bottom: 30px; display: block; object-fit: cover; }
   .story-step:nth-child(1) .story-step-image { object-position: 50% 28%; }
   .story-step:nth-child(2) .story-step-image { object-position: 50% 38%; }
-  .story-step:nth-child(3) .story-step-image { object-position: 50% 30%; }
+  .story-step:nth-child(3) .story-step-image { object-position: 50% 50%; }
   .story-number { top: 495px; }
   .story-step h3 { font-size: 47px; }
   .weddings { grid-template-columns: 1fr; }
