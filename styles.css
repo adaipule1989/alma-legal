@@ -97,12 +97,6 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .hero-image-wrap img { height: 100%; object-fit: cover; object-position: 50% 35%; transform: scale(1.035); will-change: transform; }
 .hero-flower { position: absolute; right: -24px; bottom: -25px; width: 210px; color: rgba(255, 253, 249, .72); }
 
-.marquee { overflow: hidden; padding: 17px 0; color: var(--paper); background: var(--plum); }
-.marquee-track { width: max-content; display: flex; align-items: center; gap: 35px; animation: scroll 24s linear infinite; }
-.marquee span { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .28em; text-transform: uppercase; }
-.marquee i { color: var(--lavender); font-style: normal; }
-@keyframes scroll { to { transform: translateX(-50%); } }
-
 .section { padding: 130px max(6vw, calc((100vw - 1440px) / 2)); }
 .section-heading { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 80px; padding-bottom: 62px; border-bottom: 1px solid var(--line); }
 .section-heading h2, .about h2, .contact h2 { font-size: clamp(48px, 5.4vw, 78px); }
