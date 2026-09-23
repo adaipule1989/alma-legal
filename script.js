@@ -1,5 +1,8 @@
 const translations = {
   en: {
+    metaTitle: "Alma Legal | Attorney, Public Notary & Civil Weddings in Costa Rica",
+    metaDescription: "Private legal and notarial services in Costa Rica, including bespoke bilingual civil wedding ceremonies by Adriana Mayorga.",
+    skipLink: "Skip to content", brandTagline: "Legal Services", menuOpen: "Open menu", menuClose: "Close menu",
     navServices: "Services", navWeddings: "Weddings", navAbout: "About", navContact: "Contact",
     consultation: "Book a consultation", heroEyebrow: "Private legal & wedding services · Costa Rica",
     heroTitle: "Private counsel.<br><em>Remarkable ceremonies.</em>",
@@ -9,6 +12,10 @@ const translations = {
     personalizedSub: "Legally seamless. Entirely personal.", servicesEyebrow: "How I can help",
     servicesTitle: "For life’s most<br>defining moments.",
     servicesIntro: "Sophisticated legal guidance delivered with discretion, precision, and a distinctly personal touch.",
+    qualityOne: "Discreet", qualityTwo: "Bespoke", qualityThree: "Legally seamless",
+    storyCaptionOne: "Clear advice. Complete discretion.", storyCaptionTwo: "Every detail, carefully considered.",
+    storyCaptionThree: "Your story, beautifully honored.", storyEyebrowOne: "Private counsel",
+    storyEyebrowTwo: "Precision in every detail", storyEyebrowThree: "Made for your story",
     legalTitle: "Legal guidance", legalText: "Attentive counsel for personal matters and important decisions in Costa Rica.",
     notaryTitle: "Notarial services", notaryText: "Professional preparation, review, and formalization of legal documents.",
     weddingTitle: "Civil weddings", weddingText: "Legal, heartfelt ceremonies created for your story, anywhere in Costa Rica.",
@@ -19,7 +26,10 @@ const translations = {
     weddingFour: "English or Spanish officiation", planCeremony: "Let’s plan your ceremony",
     galleryEyebrow: "A sense of place", galleryScript: "Made for the moment.",
     aboutEyebrow: "Meet your attorney", aboutRole: "Costa Rican Attorney & Public Notary",
-    aboutText: "My practice is intentionally personal. I bring legal precision, cultural fluency, and calm attention to every engagement—whether advising on an important matter or officiating an unforgettable celebration.",
+    aboutText: "I’m Adriana Mayorga, a Costa Rican attorney and public notary. Through Alma Legal, I offer thoughtful legal and notarial support with a clear, personal approach.",
+    aboutTextTwo: "For couples marrying in Costa Rica, I bring the same precision to every ceremony—guiding the legal process, coordinating with planners, and creating meaningful words that feel entirely their own.",
+    credentialOne: "Costa Rican attorney", credentialTwo: "Public notary", credentialThree: "English & Spanish",
+    linkedinLabel: "View LinkedIn profile",
     contactEyebrow: "Start a conversation", contactTitle: "Tell me how I<br>can help.",
     contactIntro: "Share a little about what you need, and I’ll be in touch to discuss the next step.",
     formName: "Your name", formEmail: "Email address", formService: "How can I help?", formChoose: "Choose a service",
@@ -27,6 +37,9 @@ const translations = {
     formNote: "Submitting opens your email app with your message ready to send.", footerText: "Costa Rica"
   },
   es: {
+    metaTitle: "Alma Legal | Abogada, Notaria y Matrimonios Civiles en Costa Rica",
+    metaDescription: "Servicios legales y notariales privados en Costa Rica, incluidas ceremonias civiles bilingües y personalizadas por Adriana Mayorga.",
+    skipLink: "Ir al contenido", brandTagline: "Servicios Legales", menuOpen: "Abrir menú", menuClose: "Cerrar menú",
     navServices: "Servicios", navWeddings: "Matrimonios", navAbout: "Acerca de mí", navContact: "Contacto",
     consultation: "Agendar una consulta", heroEyebrow: "Servicios legales y bodas privadas · Costa Rica",
     heroTitle: "Asesoría privada.<br><em>Ceremonias inolvidables.</em>",
@@ -36,6 +49,10 @@ const translations = {
     personalizedSub: "Legalmente impecables. Completamente personales.", servicesEyebrow: "Cómo puedo ayudarle",
     servicesTitle: "Para los momentos<br>que definen su vida.",
     servicesIntro: "Asesoría legal sofisticada, brindada con discreción, precisión y un trato profundamente personal.",
+    qualityOne: "Discreto", qualityTwo: "A la medida", qualityThree: "Legalmente impecable",
+    storyCaptionOne: "Asesoría clara. Absoluta discreción.", storyCaptionTwo: "Cada detalle, cuidadosamente previsto.",
+    storyCaptionThree: "Su historia, celebrada con belleza.", storyEyebrowOne: "Asesoría privada",
+    storyEyebrowTwo: "Precisión en cada detalle", storyEyebrowThree: "Creado para su historia",
     legalTitle: "Asesoría legal", legalText: "Atención cercana para asuntos personales y decisiones importantes en Costa Rica.",
     notaryTitle: "Servicios notariales", notaryText: "Preparación, revisión y formalización profesional de documentos legales.",
     weddingTitle: "Matrimonios civiles", weddingText: "Ceremonias legales y emotivas creadas para su historia, en cualquier lugar de Costa Rica.",
@@ -46,7 +63,10 @@ const translations = {
     weddingFour: "Ceremonia en español o inglés", planCeremony: "Planeemos su ceremonia",
     galleryEyebrow: "Un lugar inolvidable", galleryScript: "Creado para el momento.",
     aboutEyebrow: "Conozca a su abogada", aboutRole: "Abogada y Notaria Pública de Costa Rica",
-    aboutText: "Mi práctica es intencionalmente personal. Aporto precisión legal, sensibilidad cultural y atención serena a cada servicio, ya sea asesorando en un asunto importante u oficiando una celebración inolvidable.",
+    aboutText: "Soy Adriana Mayorga, abogada y notaria pública costarricense. A través de Alma Legal, ofrezco servicios legales y notariales con un enfoque claro, cercano y profundamente personal.",
+    aboutTextTwo: "Para las parejas que se casan en Costa Rica, aporto esa misma precisión a cada ceremonia: guío el proceso legal, coordino con wedding planners y creo palabras significativas que reflejan auténticamente su historia.",
+    credentialOne: "Abogada costarricense", credentialTwo: "Notaria pública", credentialThree: "Español e inglés",
+    linkedinLabel: "Ver perfil de LinkedIn",
     contactEyebrow: "Iniciemos una conversación", contactTitle: "Cuénteme cómo<br>puedo ayudarle.",
     contactIntro: "Comparta un poco sobre lo que necesita y me pondré en contacto para conversar sobre el siguiente paso.",
     formName: "Su nombre", formEmail: "Correo electrónico", formService: "¿Cómo puedo ayudarle?", formChoose: "Elija un servicio",
@@ -60,7 +80,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 function closeMenu() {
   menuButton.setAttribute("aria-expanded", "false");
-  menuButton.setAttribute("aria-label", "Open menu");
+  menuButton.setAttribute("aria-label", translations[currentLanguage].menuOpen);
   mobileNav.classList.remove("open");
   document.body.classList.remove("menu-open");
 }
@@ -68,7 +88,7 @@ function closeMenu() {
 menuButton.addEventListener("click", () => {
   const open = menuButton.getAttribute("aria-expanded") === "true";
   menuButton.setAttribute("aria-expanded", String(!open));
-  menuButton.setAttribute("aria-label", open ? "Open menu" : "Close menu");
+  menuButton.setAttribute("aria-label", open ? translations[currentLanguage].menuOpen : translations[currentLanguage].menuClose);
   mobileNav.classList.toggle("open", !open);
   document.body.classList.toggle("menu-open", !open);
 });
@@ -81,6 +101,8 @@ let currentLanguage = localStorage.getItem("alma-language") || "en";
 function setLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language;
+  document.title = translations[language].metaTitle;
+  document.querySelector('meta[name="description"]').setAttribute("content", translations[language].metaDescription);
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = translations[language][element.dataset.i18n];
     if (value) element.innerHTML = value;
@@ -89,6 +111,7 @@ function setLanguage(language) {
     ? '<span class="active">EN</span><span aria-hidden="true">/</span><span>ES</span>'
     : '<span>EN</span><span aria-hidden="true">/</span><span class="active">ES</span>';
   languageToggle.setAttribute("aria-label", language === "en" ? "Cambiar a español" : "Switch to English");
+  menuButton.setAttribute("aria-label", translations[language].menuOpen);
   localStorage.setItem("alma-language", language);
 }
 
@@ -117,4 +140,64 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+
+const storySteps = [...document.querySelectorAll("[data-step]")];
+const storyFrames = [...document.querySelectorAll("[data-frame]")];
+const storyProgress = [...document.querySelectorAll(".story-progress span")];
+
+function activateStory(index) {
+  storySteps.forEach((step, stepIndex) => step.classList.toggle("active", stepIndex === index));
+  storyFrames.forEach((frame, frameIndex) => frame.classList.toggle("active", frameIndex === index));
+  storyProgress.forEach((item, itemIndex) => item.classList.toggle("active", itemIndex === index));
+}
+
+function updateActiveStory() {
+  if (!storySteps.length || window.innerWidth <= 760) return;
+  const viewportCenter = window.innerHeight / 2;
+  let closestIndex = 0;
+  let closestDistance = Infinity;
+
+  storySteps.forEach((step, index) => {
+    const rect = step.getBoundingClientRect();
+    const distance = Math.abs(rect.top + rect.height / 2 - viewportCenter);
+    if (distance < closestDistance) {
+      closestDistance = distance;
+      closestIndex = index;
+    }
+  });
+
+  activateStory(closestIndex);
+}
+
+activateStory(0);
+
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const heroImage = document.querySelector(".hero-image-wrap img");
+const weddingImage = document.querySelector(".wedding-photo img");
+let scrollTicking = false;
+
+function updateScrollEffects() {
+  updateActiveStory();
+  if (!reduceMotion.matches && window.innerWidth > 760) {
+    const heroProgress = Math.min(window.scrollY / Math.max(window.innerHeight, 1), 1);
+    heroImage.style.transform = `translate3d(0, ${heroProgress * 28}px, 0) scale(1.055)`;
+
+    const weddingRect = weddingImage.parentElement.getBoundingClientRect();
+    const weddingOffset = ((weddingRect.top + weddingRect.height / 2) - window.innerHeight / 2) / window.innerHeight;
+    const clampedOffset = Math.max(-1, Math.min(1, weddingOffset));
+    weddingImage.style.transform = `translate3d(0, ${clampedOffset * -26}px, 0) scale(1.075)`;
+  }
+  scrollTicking = false;
+}
+
+window.addEventListener("scroll", () => {
+  if (!scrollTicking) {
+    window.requestAnimationFrame(updateScrollEffects);
+    scrollTicking = true;
+  }
+}, { passive: true });
+
+window.addEventListener("resize", updateScrollEffects);
+
+updateScrollEffects();
 document.getElementById("year").textContent = new Date().getFullYear();

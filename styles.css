@@ -96,7 +96,7 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .hero-visual { position: relative; background: var(--paper-deep); }
 .hero-image-wrap { position: relative; height: 100%; overflow: hidden; }
 .hero-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(35, 31, 27, .1), transparent 34%, rgba(35, 31, 27, .28)); pointer-events: none; }
-.hero-image-wrap img { height: 100%; object-fit: cover; object-position: 50% 35%; }
+.hero-image-wrap img { height: 100%; object-fit: cover; object-position: 50% 35%; transform: scale(1.035); will-change: transform; }
 .hero-card { position: absolute; left: 0; bottom: 55px; transform: translateX(-50%); width: min(380px, 42vw); padding: 25px 28px; display: flex; align-items: center; gap: 20px; color: var(--ink); background: rgba(255,253,249,.94); border: 1px solid rgba(255,255,255,.65); backdrop-filter: blur(14px); }
 .hero-card-number { color: var(--orange); font-family: var(--serif); font-size: 33px; }
 .hero-card div { display: flex; flex-direction: column; }
@@ -114,22 +114,35 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .section-heading { display: grid; grid-template-columns: 1.2fr .8fr; align-items: end; gap: 80px; padding-bottom: 62px; border-bottom: 1px solid var(--line); }
 .section-heading h2, .about h2, .contact h2 { font-size: clamp(48px, 5.4vw, 78px); }
 .section-heading > p { max-width: 450px; margin: 0 0 3px; color: #64645c; font-size: 16px; }
-.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
-.service-card { position: relative; min-height: 390px; padding: 45px 38px 38px; border-right: 1px solid var(--line); display: flex; flex-direction: column; }
-.service-card:first-child { border-left: 1px solid var(--line); }
-.service-number { position: absolute; top: 22px; right: 25px; color: #999487; font-family: var(--serif); font-size: 14px; }
-.service-icon { width: 55px; height: 55px; margin-bottom: auto; color: var(--orange); }
-.service-icon svg { fill: none; stroke: currentColor; stroke-width: 1.25; }
-.service-card h3 { margin: 38px 0 12px; font-family: var(--serif); font-size: 32px; font-weight: 400; }
-.service-card p { max-width: 310px; margin: 0; color: #66655e; font-size: 14px; }
-.service-card.featured { color: var(--white); background: var(--plum); border-color: var(--plum); }
-.service-card.featured .service-number, .service-card.featured p { color: rgba(255,255,255,.75); }
-.service-card.featured .service-icon { color: var(--white); }
-.service-card.featured a { display: flex; justify-content: space-between; margin-top: 25px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,.35); font-size: 12px; font-weight: 600; }
+.service-story { display: grid; grid-template-columns: minmax(0, 1.28fr) minmax(330px, .72fr); gap: clamp(55px, 8vw, 125px); margin-top: 90px; }
+.story-stage { position: sticky; top: 34px; height: calc(100vh - 68px); min-height: 620px; max-height: 880px; overflow: hidden; align-self: start; background: var(--plum); }
+.story-frame { position: absolute; inset: 0; margin: 0; opacity: 0; transform: scale(1.075); transition: opacity .85s ease, transform 1.25s cubic-bezier(.2,.7,.2,1); pointer-events: none; }
+.story-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(19,15,18,.64)); }
+.story-frame.active { z-index: 1; opacity: 1; transform: scale(1); }
+.story-frame img { height: 100%; object-fit: cover; }
+.story-frame[data-frame="0"] img { object-position: 50% 28%; }
+.story-frame[data-frame="1"] img { object-position: 50% 38%; }
+.story-frame[data-frame="2"] img { object-position: 50% 32%; }
+.story-frame figcaption { position: absolute; z-index: 2; right: 42px; bottom: 38px; left: 42px; display: flex; align-items: center; justify-content: space-between; gap: 25px; color: var(--white); font-family: var(--serif); font-size: clamp(22px, 2.3vw, 34px); }
+.story-frame figcaption span:first-child { color: var(--lavender); font-family: var(--sans); font-size: 9px; letter-spacing: .2em; }
+.story-progress { position: absolute; z-index: 3; top: 50%; right: 18px; display: flex; flex-direction: column; gap: 9px; transform: translateY(-50%); }
+.story-progress span { width: 2px; height: 22px; background: rgba(255,255,255,.28); transition: height .45s, background .45s; }
+.story-progress span.active { height: 46px; background: var(--white); }
+.story-steps { min-width: 0; }
+.story-step { position: relative; min-height: 82vh; display: flex; flex-direction: column; justify-content: center; border-top: 1px solid var(--line); opacity: .26; transform: translateY(22px); transition: opacity .6s ease, transform .8s cubic-bezier(.2,.7,.2,1); }
+.story-step:last-child { border-bottom: 1px solid var(--line); }
+.story-step.active { opacity: 1; transform: none; }
+.story-step-image { display: none; }
+.story-number { position: absolute; top: 30px; right: 0; color: #999487; font-family: var(--serif); font-size: 17px; }
+.story-step .eyebrow { margin-bottom: 20px; }
+.story-step h3 { max-width: 440px; margin: 0 0 22px; font-family: var(--serif); font-size: clamp(48px, 5vw, 72px); font-weight: 400; line-height: .96; letter-spacing: -.025em; }
+.story-step > p:not(.eyebrow) { max-width: 390px; margin: 0; color: #62625b; font-size: 15px; line-height: 1.75; }
+.story-link { width: fit-content; margin-top: 34px; padding-bottom: 6px; border-bottom: 1px solid var(--ink); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.story-link span { margin-left: 12px; color: var(--orange); }
 
 .weddings { display: grid; grid-template-columns: 1fr 1fr; padding: 0; background: var(--plum); }
 .wedding-photo { position: relative; min-height: 800px; overflow: hidden; }
-.wedding-photo img { height: 100%; object-fit: cover; object-position: center 33%; }
+.wedding-photo img { height: 100%; object-fit: cover; object-position: center 33%; transform: scale(1.035); will-change: transform; }
 .photo-label { position: absolute; left: 26px; bottom: 28px; padding: 9px 15px; color: var(--ink); background: var(--paper); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
 .wedding-copy { padding: 100px clamp(45px, 7vw, 120px); color: var(--white); display: flex; flex-direction: column; justify-content: center; }
 .eyebrow.light { color: #d8cae7; }
@@ -157,7 +170,11 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .about { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(60px, 9vw, 150px); }
 .about-copy { max-width: 580px; }
 .about-role { margin: 24px 0 34px; color: var(--orange-dark); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
-.about-copy > p:last-of-type { color: #606058; font-size: 16px; line-height: 1.8; }
+.about-copy > p:not(.eyebrow):not(.about-role) { margin: 0 0 17px; color: #606058; font-size: 15px; line-height: 1.78; }
+.about-credentials { display: flex; flex-wrap: wrap; gap: 8px; margin: 28px 0 25px; }
+.about-credentials span { padding: 8px 11px; border: 1px solid var(--line); font-size: 9px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.linkedin-link { width: fit-content; display: flex; align-items: center; gap: 14px; padding-bottom: 5px; border-bottom: 1px solid var(--ink); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
+.linkedin-link span:last-child { color: var(--orange); }
 .signature { margin-top: 25px; color: var(--plum); font-family: var(--serif); font-size: 44px; font-style: italic; }
 .about-photo { position: relative; height: 700px; }
 .about-photo::before { content: ""; position: absolute; inset: 22px -22px -22px 22px; z-index: -1; border: 1px solid var(--lavender); }
@@ -192,8 +209,8 @@ footer p { color: #74736b; font-size: 11px; }
 .whatsapp:hover { transform: translateY(-3px); }
 .whatsapp svg { fill: currentColor; }
 
-.reveal { opacity: 0; transform: translateY(24px); transition: opacity .8s ease, transform .8s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+.reveal { opacity: 0; filter: blur(6px); transform: translateY(30px); transition: opacity .9s ease, filter .9s ease, transform 1s cubic-bezier(.2,.7,.2,1); }
+.reveal.visible { opacity: 1; filter: blur(0); transform: none; }
 
 @media (max-width: 1080px) {
   .desktop-nav, .header-actions .button { display: none; }
@@ -204,7 +221,8 @@ footer p { color: #74736b; font-size: 11px; }
   .mobile-nav { position: fixed; inset: 108px 0 auto; padding: 35px 6vw 45px; display: flex; flex-direction: column; gap: 22px; background: var(--paper); border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 30px; transform: translateY(-130%); transition: transform .35s ease; }
   .mobile-nav.open { transform: none; }
   .hero-card { transform: translateX(-25%); }
-  .service-card { padding-left: 25px; padding-right: 25px; }
+  .service-story { grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); gap: 48px; }
+  .story-stage { min-height: 570px; }
   .wedding-photo { min-height: 700px; }
 }
 
@@ -229,8 +247,16 @@ footer p { color: #74736b; font-size: 11px; }
   .section-heading { display: block; padding-bottom: 42px; }
   .section-heading h2, .about h2, .contact h2 { font-size: 49px; }
   .section-heading > p { margin-top: 28px; }
-  .service-grid { grid-template-columns: 1fr; }
-  .service-card { min-height: 330px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .service-story { display: block; margin-top: 55px; }
+  .story-stage { display: none; }
+  .story-step { min-height: 0; padding: 0 0 70px; border: 0; opacity: 1; transform: none; }
+  .story-step + .story-step { padding-top: 0; }
+  .story-step-image { width: 100%; height: 470px; margin-bottom: 30px; display: block; object-fit: cover; }
+  .story-step:nth-child(1) .story-step-image { object-position: 50% 28%; }
+  .story-step:nth-child(2) .story-step-image { object-position: 50% 38%; }
+  .story-step:nth-child(3) .story-step-image { object-position: 50% 30%; }
+  .story-number { top: 495px; }
+  .story-step h3 { font-size: 47px; }
   .weddings { grid-template-columns: 1fr; }
   .wedding-photo { min-height: 620px; }
   .wedding-copy { padding: 80px 24px; }
@@ -254,5 +280,6 @@ footer p { color: #74736b; font-size: 11px; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-  .reveal { opacity: 1; transform: none; }
+  .reveal { opacity: 1; filter: none; transform: none; }
+  .story-frame, .story-step { transition: none; }
 }
