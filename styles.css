@@ -76,8 +76,8 @@ button { color: inherit; }
 .menu-toggle, .mobile-nav { display: none; }
 
 .hero {
-  min-height: 790px;
-  height: min(900px, 100vh);
+  min-height: 900px;
+  height: max(900px, 100svh);
   display: grid;
   grid-template-columns: 53% 47%;
   padding-top: 108px;
@@ -91,17 +91,10 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .hero-actions { display: flex; align-items: center; gap: 28px; }
 .text-link { font-size: 13px; font-weight: 600; padding-bottom: 4px; border-bottom: 1px solid var(--ink); }
 .text-link span { color: var(--orange); margin-left: 4px; }
-.hero-note { display: flex; align-items: center; gap: 10px; margin-top: 64px; color: #6d6d64; font-size: 11px; letter-spacing: .04em; }
-.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--sage); box-shadow: 0 0 0 4px rgba(111, 128, 103, .15); }
 .hero-visual { position: relative; background: var(--paper-deep); }
 .hero-image-wrap { position: relative; height: 100%; overflow: hidden; }
 .hero-image-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(35, 31, 27, .1), transparent 34%, rgba(35, 31, 27, .28)); pointer-events: none; }
 .hero-image-wrap img { height: 100%; object-fit: cover; object-position: 50% 35%; transform: scale(1.035); will-change: transform; }
-.hero-card { position: absolute; left: 0; bottom: 55px; transform: translateX(-50%); width: min(380px, 42vw); padding: 25px 28px; display: flex; align-items: center; gap: 20px; color: var(--ink); background: rgba(255,253,249,.94); border: 1px solid rgba(255,255,255,.65); backdrop-filter: blur(14px); }
-.hero-card-number { color: var(--orange); font-family: var(--serif); font-size: 33px; }
-.hero-card div { display: flex; flex-direction: column; }
-.hero-card strong { font-family: var(--serif); font-size: 24px; font-weight: 500; }
-.hero-card div span { color: #69685f; font-size: 11px; }
 .hero-flower { position: absolute; right: -24px; bottom: -25px; width: 210px; color: rgba(255, 253, 249, .72); }
 
 .marquee { overflow: hidden; padding: 17px 0; color: var(--paper); background: var(--plum); }
@@ -160,12 +153,13 @@ h1 em, h2 em { color: var(--orange); font-style: italic; }
 .gallery-heading { display: flex; align-items: end; justify-content: space-between; margin-bottom: 46px; }
 .gallery-heading .eyebrow { margin: 0 0 12px; }
 .gallery-script { margin: 0; color: var(--plum); font-family: var(--serif); font-size: clamp(34px, 4.2vw, 60px); font-style: italic; }
-.gallery-grid { height: 720px; display: grid; grid-template-columns: 1.2fr .8fr 1fr; grid-template-rows: 1fr 1fr; gap: 14px; }
-.gallery-item { margin: 0; overflow: hidden; }
-.gallery-item img { height: 100%; object-fit: cover; transition: transform .7s ease; }
+.gallery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: start; gap: 14px; }
+.gallery-item { margin: 0; overflow: hidden; background: var(--paper-deep); }
+.gallery-item:nth-child(even) { margin-top: 70px; }
+.gallery-item img { height: auto; object-fit: contain; transition: transform .7s ease; }
 .gallery-item:hover img { transform: scale(1.025); }
-.gallery-tall { grid-row: 1 / 3; }
-.gallery-wide { grid-column: 2 / 4; }
+.gallery-tall { grid-row: auto; }
+.gallery-wide { grid-column: auto; }
 
 .about { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(60px, 9vw, 150px); }
 .about-copy { max-width: 580px; }
@@ -220,7 +214,6 @@ footer p { color: #74736b; font-size: 11px; }
   .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-3.5px) rotate(-45deg); }
   .mobile-nav { position: fixed; inset: 108px 0 auto; padding: 35px 6vw 45px; display: flex; flex-direction: column; gap: 22px; background: var(--paper); border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 30px; transform: translateY(-130%); transition: transform .35s ease; }
   .mobile-nav.open { transform: none; }
-  .hero-card { transform: translateX(-25%); }
   .service-story { grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr); gap: 48px; }
   .story-stage { min-height: 570px; }
   .wedding-photo { min-height: 700px; }
@@ -238,10 +231,8 @@ footer p { color: #74736b; font-size: 11px; }
   h1 { max-width: 100%; font-size: 60px; }
   .hero-intro { margin-top: 28px; font-size: 16px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 22px; }
-  .hero-note { margin-top: 45px; }
   .hero-visual { height: 650px; }
   .hero-image-wrap { position: absolute; inset: 0; }
-  .hero-card { left: 18px; bottom: 20px; transform: none; width: calc(100% - 36px); }
   .hero-flower { width: 160px; }
   .section { padding: 90px 24px; }
   .section-heading { display: block; padding-bottom: 42px; }
@@ -263,9 +254,8 @@ footer p { color: #74736b; font-size: 11px; }
   .wedding-copy h2 { font-size: 51px; }
   .gallery-heading { display: block; }
   .gallery-script { margin-top: 18px; }
-  .gallery-grid { height: auto; grid-template-columns: 1fr 1fr; grid-template-rows: 420px 300px 300px; }
-  .gallery-tall { grid-row: 1; grid-column: 1 / 3; }
-  .gallery-wide { grid-column: 1 / 3; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .gallery-item:nth-child(even) { margin-top: 35px; }
   .about { grid-template-columns: 1fr; gap: 55px; }
   .about-photo { height: 560px; }
   .about-photo::before { display: none; }
