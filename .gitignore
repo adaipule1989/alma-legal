@@ -1,0 +1,6 @@
+.DS_Store
+.vercel
+
+# Original high-resolution source photos (optimized copies live in /assets)
+/*.JPG
+/*.PNG
